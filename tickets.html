@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="Consulta de Tickets">
+    <meta name="description" content="Visualización de tickets registrados en el sistema">
+    <title>Ver Tickets</title>
+</head>
+<body>
+
+<header>
+    <h1>Tickets Registrados</h1>
+    <p>Listado actualizado de incidencias técnicas</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nuevo-reporte.html">Nuevo Reporte</a></li>
+        <li><a href="ver-tickets.html">Tickets</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <h2>Listado de tickets</h2>
+        <article>
+            <h3>Tabla de incidencias</h3>
+            <table>
+                <caption>Tickets del sistema de soporte técnico</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Título</th>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Prioridad</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">T-001</th>
+                        <td>No conecta Internet</td>
+                        <td>Red</td>
+                        <td>Alta</td>
+                        <td>Abierto</td>
+                        <td>10/06/2026</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">T-002</th>
+                        <td>PC no enciende</td>
+                        <td>Hardware</td>
+                        <td>Media</td>
+                        <td>En proceso</td>
+                        <td>11/06/2026</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">T-003</th>
+                        <td>Error en sistema académico</td>
+                        <td>Software</td>
+                        <td>Alta</td>
+                        <td>Abierto</td>
+                        <td>12/06/2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+
+    <section>
+        <h2>Estados de atención</h2>
+        <article>
+            <h3>Definición de estados</h3>
+            <ul>
+                <li><strong>Abierto:</strong> Ticket registrado y pendiente de revisión.</li>
+                <li><strong>En proceso:</strong> Ticket en revisión por soporte.</li>
+                <li><strong>Cerrado:</strong> Ticket solucionado.</li>
+            </ul>
+            <p><a href="nuevo-reporte.html">Registrar nueva incidencia</a></p>
+        </article>
+    </section>
+</main>
+
+<aside>
+    <h2>Notas</h2>
+    <p>Las tablas permiten organizar y visualizar todas las incidencias del sistema.</p>
+</aside>
+
+<footer>
+    <p>&copy; 2026 Sistema de Soporte Técnico</p>
+</footer>
+
+</body>
+</html>
