@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System Help Desk - UI Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <p class="tag">Universidad Técnica de Manabí</p>
+      <h1>Design System para Sistema Help Desk</h1>
+      <p class="subtitle">
+        Librería profesional de componentes UI desarrollada con HTML5 y CSS3 puro.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="section">
+      <h2>Paleta de colores corporativa</h2>
+      <p>
+        Colores definidos mediante variables CSS para mantener una línea gráfica uniforme.
+      </p>
+
+      <div class="palette">
+        <div class="color-box color-primary">Primario</div>
+        <div class="color-box color-secondary">Secundario</div>
+        <div class="color-box color-accent">Acento</div>
+        <div class="color-box color-success">Éxito</div>
+        <div class="color-box color-warning">Advertencia</div>
+        <div class="color-box color-danger">Peligro</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Botones del sistema</h2>
+      <p>
+        Botones reutilizables para acciones principales, secundarias y críticas.
+      </p>
+
+      <div class="button-group">
+        <button class="btn btn-primary">Registrar</button>
+        <button class="btn btn-secondary">Actualizar</button>
+        <button class="btn btn-danger">Eliminar</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Formulario de registro de ticket</h2>
+      <p>
+        Campos diseñados para registrar incidentes dentro del sistema Help Desk.
+      </p>
+
+      <form class="form-box">
+        <div class="form-group">
+          <label for="usuario">Nombre del usuario</label>
+          <input 
+            type="text" 
+            id="usuario" 
+            class="input-control" 
+            placeholder="Ingrese el nombre completo"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo institucional</label>
+          <input 
+            type="email" 
+            id="email" 
+            class="input-control" 
+            placeholder="ejemplo@utm.edu.ec"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="categoria">Categoría del incidente</label>
+          <select id="categoria" class="input-control">
+            <option value="">Seleccione una categoría</option>
+            <option value="software">Software</option>
+            <option value="hardware">Hardware</option>
+            <option value="redes">Redes</option>
+            <option value="usuarios">Usuarios</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="prioridad">Nivel de prioridad</label>
+          <select id="prioridad" class="input-control">
+            <option value="">Seleccione la prioridad</option>
+            <option value="alta">Alta</option>
+            <option value="media">Media</option>
+            <option value="baja">Baja</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar ticket</button>
+      </form>
+    </section>
+
+    <section class="section">
+      <h2>Tarjetas de tickets</h2>
+      <p>
+        Componentes tipo card para visualizar información resumida de incidentes.
+      </p>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <div class="card-header">
+            <h3>Falla en acceso al sistema</h3>
+            <span class="badge badge-high">Alta</span>
+          </div>
+
+          <p>
+            El usuario reporta problemas para iniciar sesión en la plataforma institucional.
+          </p>
+
+          <div class="card-footer">
+            <span>#TK-101</span>
+            <span>Área: Software</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h3>Equipo con bajo rendimiento</h3>
+            <span class="badge badge-medium">Media</span>
+          </div>
+
+          <p>
+            Se solicita revisión técnica de un computador con lentitud en sus procesos.
+          </p>
+
+          <div class="card-footer">
+            <span>#TK-102</span>
+            <span>Área: Hardware</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h3>Actualización de datos</h3>
+            <span class="badge badge-low">Baja</span>
+          </div>
+
+          <p>
+            El usuario solicita actualizar información registrada en el sistema.
+          </p>
+
+          <div class="card-footer">
+            <span>#TK-103</span>
+            <span>Área: Usuarios</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Alertas del sistema</h2>
+      <p>
+        Mensajes visuales para informar estados importantes al usuario.
+      </p>
+
+      <div class="alert alert-success">
+        El ticket fue registrado correctamente.
+      </div>
+
+      <div class="alert alert-warning">
+        Existen campos pendientes por completar.
+      </div>
+
+      <div class="alert alert-danger">
+        No fue posible procesar la solicitud.
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>
+      UI Kit desarrollado con CSS3 puro | Carrera de Tecnologías de la Información
+    </p>
+  </footer>
+
+</body>
+</html>
