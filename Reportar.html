@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Nuevo Reporte">
+  <meta name="description" content="Formulario para registrar nuevas incidencias en el sistema">
+  <title>Registro de Incidencias</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header header-small">
+  <div class="container">
+    <p class="tag">Sistema Help Desk</p>
+    <h1>Registrar Nueva Incidencia</h1>
+    <p class="subtitle">Formulario para reportar problemas técnicos de hardware, software o red.</p>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="container nav-content">
+    <a class="brand" href="index.html">Help Desk</a>
+    <ul class="nav-menu">
+      <li><a class="nav-link" href="index.html">Inicio</a></li>
+      <li><a class="nav-link active" href="reportar.html">Nuevo Reporte</a></li>
+      <li><a class="nav-link" href="tickets.html">Tickets</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container layout">
+  <main class="main-content">
+
+    <section class="section">
+      <h2>Datos del solicitante</h2>
+      <p>Complete los datos solicitados para registrar la incidencia.</p>
+
+      <form class="form-box" action="tickets.html" method="get">
+        <fieldset class="fieldset-box">
+          <legend>Información del usuario</legend>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="usuario">Nombre completo</label>
+              <input class="input-control" type="text" id="usuario" name="usuario" required>
+            </div>
+
+            <div class="form-group">
+              <label for="correo">Correo electrónico</label>
+              <input class="input-control" type="email" id="correo" name="correo" required>
+            </div>
+
+            <div class="form-group form-full">
+              <label for="departamento">Departamento</label>
+              <input class="input-control" type="text" id="departamento" name="departamento" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset-box">
+          <legend>Detalles de la incidencia</legend>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="titulo">Título del problema</label>
+              <input class="input-control" type="text" id="titulo" name="titulo" required>
+            </div>
+
+            <div class="form-group">
+              <label for="categoria">Categoría</label>
+              <select class="input-control" id="categoria" name="categoria" required>
+                <option value="">Seleccione</option>
+                <option value="hardware">Hardware</option>
+                <option value="software">Software</option>
+                <option value="red">Red</option>
+              </select>
+            </div>
+
+            <div class="form-group form-full">
+              <span class="label-title">Prioridad</span>
+
+              <div class="radio-group">
+                <label class="radio-option">
+                  <input type="radio" name="prioridad" value="Alta" required>
+                  Alta
+                </label>
+
+                <label class="radio-option">
+                  <input type="radio" name="prioridad" value="Media">
+                  Media
+                </label>
+
+                <label class="radio-option">
+                  <input type="radio" name="prioridad" value="Baja">
+                  Baja
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group form-full">
+              <label for="descripcion">Descripción detallada</label>
+              <textarea class="input-control textarea-control" id="descripcion" name="descripcion" rows="6" required></textarea>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="button-group form-actions">
+          <button class="btn btn-primary" type="submit">Enviar reporte</button>
+          <button class="btn btn-danger" type="reset">Limpiar</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="alert alert-warning">
+      <strong>Recomendación:</strong> proporcione información clara y completa para facilitar una resolución rápida.
+    </div>
+  </aside>
+</div>
+
+<footer class="footer">
+  <p>UI Kit aplicado al Sistema Help Desk | Carrera de Tecnologías de la Información</p>
+</footer>
+
+</body>
+</html>

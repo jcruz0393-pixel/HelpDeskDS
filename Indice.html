@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Sistema de Soporte Técnico">
+  <meta name="description" content="Panel principal del sistema de gestión de incidencias técnicas">
+  <title>Panel Sistema Soporte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <p class="tag">Universidad Técnica de Manabí</p>
+    <h1>Panel de Control - Sistema Help Desk</h1>
+    <p class="subtitle">Dashboard principal para consultar el estado de incidencias y acceder a las funciones del sistema.</p>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="container nav-content">
+    <a class="brand" href="index.html">Help Desk</a>
+    <ul class="nav-menu">
+      <li><a class="nav-link active" href="index.html">Inicio</a></li>
+      <li><a class="nav-link" href="reportar.html">Nuevo Reporte</a></li>
+      <li><a class="nav-link" href="tickets.html">Tickets</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container layout">
+  <main class="main-content">
+
+    <section class="section">
+      <h2>Bienvenida al sistema</h2>
+      <article class="card">
+        <div class="card-header">
+          <h3>Mensaje inicial</h3>
+          <span class="badge badge-low">Activo</span>
+        </div>
+        <p>Bienvenido al panel de soporte técnico, donde podrás gestionar y consultar los incidentes reportados por los usuarios.</p>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Resumen de incidencias</h2>
+      <p>Indicadores generales del estado actual de los tickets registrados.</p>
+
+      <div class="dashboard-grid">
+        <article class="metric-card">
+          <span class="metric-number">4</span>
+          <h3>Incidencias abiertas</h3>
+          <p>Pendientes de revisión por soporte.</p>
+        </article>
+
+        <article class="metric-card">
+          <span class="metric-number">2</span>
+          <h3>En proceso</h3>
+          <p>Reportes que están siendo atendidos.</p>
+        </article>
+
+        <article class="metric-card">
+          <span class="metric-number">6</span>
+          <h3>Incidencias cerradas</h3>
+          <p>Casos solucionados y documentados.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Accesos rápidos</h2>
+      <p>Opciones principales para operar dentro del sistema Help Desk.</p>
+
+      <div class="button-group">
+        <a class="btn btn-primary" href="reportar.html">Registrar un nuevo incidente</a>
+        <a class="btn btn-secondary" href="tickets.html">Consultar tickets</a>
+      </div>
+    </section>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="alert alert-success">
+      <strong>Notas de uso:</strong> todos los reportes deben incluir información detallada del problema para facilitar su atención.
+    </div>
+  </aside>
+</div>
+
+<footer class="footer">
+  <p>UI Kit aplicado al Sistema Help Desk | Carrera de Tecnologías de la Información</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Consulta de Tickets">
+  <meta name="description" content="Visualización de tickets registrados en el sistema">
+  <title>Ver Tickets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header header-small">
+  <div class="container">
+    <p class="tag">Sistema Help Desk</p>
+    <h1>Tickets Registrados</h1>
+    <p class="subtitle">Listado actualizado de incidencias técnicas registradas en el sistema.</p>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="container nav-content">
+    <a class="brand" href="index.html">Help Desk</a>
+    <ul class="nav-menu">
+      <li><a class="nav-link" href="index.html">Inicio</a></li>
+      <li><a class="nav-link" href="reportar.html">Nuevo Reporte</a></li>
+      <li><a class="nav-link active" href="tickets.html">Tickets</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container layout">
+  <main class="main-content">
+
+    <section class="section">
+      <h2>Listado de tickets</h2>
+      <p>Tabla de incidencias con prioridad, estado y fecha de registro.</p>
+
+      <article class="table-card">
+        <h3>Tabla de incidencias</h3>
+
+        <div class="table-responsive">
+          <table class="ticket-table">
+            <caption>Tickets del sistema de soporte técnico</caption>
+
+            <thead>
+              <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Título</th>
+                <th scope="col">Categoría</th>
+                <th scope="col">Prioridad</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Fecha</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row" data-label="Código">T-001</th>
+                <td data-label="Título">No conecta Internet</td>
+                <td data-label="Categoría">Red</td>
+                <td data-label="Prioridad"><span class="badge badge-high">Alta</span></td>
+                <td data-label="Estado"><span class="status status-open">Abierto</span></td>
+                <td data-label="Fecha">10/06/2026</td>
+              </tr>
+
+              <tr>
+                <th scope="row" data-label="Código">T-002</th>
+                <td data-label="Título">PC no enciende</td>
+                <td data-label="Categoría">Hardware</td>
+                <td data-label="Prioridad"><span class="badge badge-medium">Media</span></td>
+                <td data-label="Estado"><span class="status status-process">En proceso</span></td>
+                <td data-label="Fecha">11/06/2026</td>
+              </tr>
+
+              <tr>
+                <th scope="row" data-label="Código">T-003</th>
+                <td data-label="Título">Error en sistema académico</td>
+                <td data-label="Categoría">Software</td>
+                <td data-label="Prioridad"><span class="badge badge-high">Alta</span></td>
+                <td data-label="Estado"><span class="status status-open">Abierto</span></td>
+                <td data-label="Fecha">12/06/2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Estados de atención</h2>
+      <p>Clasificación utilizada para dar seguimiento a cada incidencia.</p>
+
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-header">
+            <h3>Abierto</h3>
+            <span class="status status-open">Nuevo</span>
+          </div>
+          <p>Ticket registrado y pendiente de revisión.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h3>En proceso</h3>
+            <span class="status status-process">Revisión</span>
+          </div>
+          <p>Ticket en revisión por el área de soporte.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h3>Cerrado</h3>
+            <span class="status status-closed">Finalizado</span>
+          </div>
+          <p>Ticket solucionado y documentado.</p>
+        </article>
+      </div>
+
+      <div class="button-group">
+        <a class="btn btn-primary" href="reportar.html">Registrar nueva incidencia</a>
+      </div>
+    </section>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="alert alert-warning">
+      <strong>Nota:</strong> en pantallas móviles, la tabla se adapta en formato de tarjetas para evitar scroll horizontal.
+    </div>
+  </aside>
+</div>
+
+<footer class="footer">
+  <p>UI Kit aplicado al Sistema Help Desk | Carrera de Tecnologías de la Información</p>
+</footer>
+
+</body>
+</html>
